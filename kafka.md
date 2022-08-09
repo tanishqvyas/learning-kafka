@@ -34,4 +34,15 @@ We also have a consumer group (one or more than one groups) and each group can h
 
 A consumer cannot hang independently. It has to be associated with a consumer group.
 
+## Zookeeper
+
+It is an open source, distributed configuration synchronization service. If there is any config change then it synchronizes the cluster producers and the consumers
+
+We need to keep a count of
+
+1. Which messages are read by the consumer
+2. Cluster information
+3. Topic information
+
+It acts as data and control plane.
 
