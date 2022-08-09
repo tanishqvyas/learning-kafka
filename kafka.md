@@ -46,3 +46,6 @@ We need to keep a count of
 
 It acts as data and control plane.
 
+![image](https://user-images.githubusercontent.com/43847978/183649558-e8c8b305-ded9-494c-a214-0ba0160d4bf9.png)
+
+
