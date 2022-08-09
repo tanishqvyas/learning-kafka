@@ -183,3 +183,6 @@ New messages are always added to the end of the partition.
 Data is immutable after publishing.
 
 In case of multi broker kafka cluster partitons for a topic are distributed across the whole cluster. 
+  
+ ![image](https://user-images.githubusercontent.com/43847978/183670531-ac2347ed-703c-4faf-9dc4-a63ac2186fa0.png)
+
