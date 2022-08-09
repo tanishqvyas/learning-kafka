@@ -186,3 +186,21 @@ In case of multi broker kafka cluster partitons for a topic are distributed acro
   
  ![image](https://user-images.githubusercontent.com/43847978/183670531-ac2347ed-703c-4faf-9dc4-a63ac2186fa0.png)
 
+Producers publish the messages to the topics of their own choice. In reality the messages are published to the topic partition.
+
+Publisher can send the messages to any partition. there is no specific order in which this has to c=be carried out.
+
+configuration is needed by Producer/Publisher so it can send the message
+
+- bootstrap_server : basically ip address and the port (default 9092 port). Because we need to know about kafka server address to be able to connect
+
+- topic : the producer needs to connect to a particular topic so we need the topic name 
+
+- value_serializer : When we send data over the wire it should be serialized (i.e. ascii converted or simple string). A method which returns the serialized value
+
+We use `send` method to send the message to the topic.
+
+**In python**
+
+1. `pip install kafka-python`
+2. `pip install Faker` to fake the data (random n stuff)
