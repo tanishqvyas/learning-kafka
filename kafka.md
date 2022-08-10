@@ -282,3 +282,19 @@ In this case
 2 Consumers
 
 In this case the message will be published to the partitions randomly. The consumers will be assigned to separate partitions.
+
+
+
+# Replication factor in Kafka
+
+Replication factor is the number of replicas that are maintained for each partition.
+
+Each partition has a replication factor. And is replicated across multiple server for fault tolerance.
+
+Only one partition will be active at a time and is called as Leader.
+
+The other partitions will only replicate messages and are called followers.
+
+The leader handles all the read and write requests while the followers passively replicates the leader.
+
+
