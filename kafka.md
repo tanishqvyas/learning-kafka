@@ -217,3 +217,17 @@ When we are defining a kafka producer we can get a partitioner method with follo
 
 - available_partition : which partitions are currently available when the producer is trying to send the message to the topic
 
+
+# What is Consumer in Kafka
+
+Consumer are the kafka component that consumes message from kafka topic. Internally consumer consume message from kafka topic partition. 
+
+**note** : Every consumer is always assigned a consumer group. It can never exist independently. If no group id is provided while creating a consumer then a random group_id is assigned.
+
+## Configuration needed by a consumer
+
+- topic : the consumer needs to connect to a particular topic so we need the topic name.
+
+- bootstrap_servers : basically ip address and the port (default 9092 port). Because we need to know about kafka server address to be able to connect
+
+- group_id : the consumer needs a group_id so they can register themselves to a consumer group. If not provided it is assigned randomly. Kafka internally creates a random group_id.
