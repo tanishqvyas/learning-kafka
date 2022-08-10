@@ -196,7 +196,7 @@ configuration is needed by Producer/Publisher so it can send the message
 
 - topic : the producer needs to connect to a particular topic so we need the topic name 
 
-- value_serializer : When we send data over the wire it should be serialized (i.e. ascii converted or simple string). A method which returns the serialized value
+- value_serializer : When we send data over the wire it should be serialized (i.e. ascii converted or simple string). A method which returns the serialized value.
 
 We use `send` method to send the message to the topic.
 
@@ -204,3 +204,16 @@ We use `send` method to send the message to the topic.
 
 1. `pip install kafka-python`
 2. `pip install Faker` to fake the data (random n stuff)
+
+
+
+# Sending message to a particular partition of a topic
+
+When we are defining a kafka producer we can get a partitioner method with following three parameters:
+
+- key_bytes : basically the value of the key (of the messages)
+
+- all_partition : total number of partitions for that topic
+
+- available_partition : which partitions are currently available when the producer is trying to send the message to the topic
+
