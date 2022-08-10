@@ -241,3 +241,44 @@ Consumer group is a logical grouping of one or more consumers. It is mandatory f
 ![image](https://user-images.githubusercontent.com/43847978/183916057-7b010aea-5d15-40c7-b239-50ad06e56d2a.png)
 
 
+
+
+## Please note scenario 1
+
+When we have
+
+1 Topic
+
+2 Partitions
+
+1 Consumer group
+
+1 Consumer
+
+In this case the message will be published to the partitions randomly but the message will be consumed in round robin fashion from the partitions.
+
+## Please note scenario 2
+
+1 Topic
+
+1 Partition
+
+1 Consumer Group
+
+2 Consumers
+
+In this case
+
+**IMP** : Same partition cannot be assigned to multiple consumer in same group. If we have 2 consumers in same group then one consumer will be assigned to one partition and other consumer will be assigned to other partition or will sit idle if there is only one partition.
+
+## Please note scenario 3
+
+1 Topic
+
+2 Partitions
+
+1 consumer Group
+
+2 Consumers
+
+In this case the message will be published to the partitions randomly. The consumers will be assigned to separate partitions.
