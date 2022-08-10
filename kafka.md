@@ -231,3 +231,12 @@ Consumer are the kafka component that consumes message from kafka topic. Interna
 - bootstrap_servers : basically ip address and the port (default 9092 port). Because we need to know about kafka server address to be able to connect
 
 - group_id : the consumer needs a group_id so they can register themselves to a consumer group. If not provided it is assigned randomly. Kafka internally creates a random group_id.
+
+## What is Consumer Group in Kafka
+
+Consumer group is a logical grouping of one or more consumers. It is mandatory for a consumer to register itself for a consumer group.
+
+**note** : Consumer instances are separate process. Consumer instance of same consumer group can be running on different machines/nodes/brokers.
+
+
+
