@@ -238,5 +238,6 @@ Consumer group is a logical grouping of one or more consumers. It is mandatory f
 
 **note** : Consumer instances are separate process. Consumer instance of same consumer group can be running on different machines/nodes/brokers.
 
+![image](https://user-images.githubusercontent.com/43847978/183916057-7b010aea-5d15-40c7-b239-50ad06e56d2a.png)
 
 
