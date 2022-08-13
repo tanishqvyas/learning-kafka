@@ -297,4 +297,3 @@ The other partitions will only replicate messages and are called followers.
 
 The leader handles all the read and write requests while the followers passively replicates the leader.
 
-
