@@ -297,3 +297,18 @@ The other partitions will only replicate messages and are called followers.
 
 The leader handles all the read and write requests while the followers passively replicates the leader.
 
+
+
+**I INSTALLED KAFKA IN**
+
+```bash
+tanishq@MAVIS:/opt/kafka_2.13-3.2.1$ sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+
+```bash
+tanishq@MAVIS:/opt/kafka_2.13-3.2.1$ sudo JMX_PORT=8004 bin/kafka-server-start.sh config/server.properties
+```
+
+```bash
+tanishq@MAVIS:~/.sbt/1.0/staging/9fe122a9540185ff93da/cmak/target/universal/cmak-3.0.0.6$ 
+```
